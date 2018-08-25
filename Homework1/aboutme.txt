@@ -8,5 +8,5 @@ Place and semester where you took a programming course in Java: San Jose State U
 Course number and grade received: CS 46A, CS 46B - A
 Place and semester where you took a course in data structures:  San Jose State University. Spring 2017
 Course number and grade received: I think B?
-Time it took you to answer the two questions below: 
-Did you ask anyone for help? [ ] Yes, [ ] No
+Time it took you to answer the two questions below: 15mins
+Did you ask anyone for help? [ ] Yes, [NO] No
