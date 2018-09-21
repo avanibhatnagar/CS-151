@@ -1,0 +1,12 @@
+1. Person goes to the gas station and parks car at the pump.
+2. Person presses one of the payment options
+3. Person fills tank with one of the three brands of gasoline: low grade, mid grade or high grade.
+4. Person then pays using credit/debit card.
+5. Person chooses whether to get receipt or not.
+6. Person then leaves the gas station.
+
+Variation #1:
+1.1 In Step 2, Person chooses to pay with cash.
+1.2 Person fills tank with one of the three brands of gasoline: low grade, mid grade or high grade.
+1.3 Person goes inside the gas station to pay the cashier
+1.4 Continue with step 5.
