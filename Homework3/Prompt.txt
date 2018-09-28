@@ -1,0 +1,23 @@
+Due Monday 10/1 Homework 3 OOD Fall18
+· Put all your work into a directory hw3 of your Git project and push it every several days.
+· Submit a link of your repo in Canvas
+· Remember to run git commit regularly if you need
+Read Chapter 3
+Question 1
+Write a program that computes the number of days that have elapsed since you were born. Use
+the ZonedDateTime class, not the Day class of this chapter.
+Read Chapter 4
+Question 2
+Write a class BankAccount that implements the Comparable interface type. Order bank accounts
+by increasing balance. Supply a test program that sorts an array list of bank accounts
+Question 3
+Write a program that shows a frame with three buttons labeled “Red”, “Green”, and “Blue”, and
+a label containing an icon showing a circle that is initially red. As the user clicks the buttons, the
+fill color of the circle should change. When you change the color, you need to invoke the repaint
+method on the label. The call to repaint ensures that the paintIcon method is called so that
+the icon can be repainted with the new color.
+Question 4
+Write a program that shows a frame with two buttons labeled “Zoom in”, and “Zoom out”, and a
+label containing a car icon. As the user clicks the buttons, the car should get larger or smaller. As
+in Question 3, you need to invoke the repaint method on the label to trigger a redisplay of the
+image.
