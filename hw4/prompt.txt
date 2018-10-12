@@ -1,0 +1,6 @@
+In this homework, write a program that contains two frames, one with a column of text fields
+containing numbers, and another that draws a bar graph showing the values of the numbers.
+When the user edits one of the numbers, the graph should be redrawn. Use the observer pattern.
+Store the data in a model. Attach the graph view as a listener. When a number is updated, the
+number view should update the model, and the model should tell the graph view that a change
+has occurred. As a result, the graph view should repaint itself.
