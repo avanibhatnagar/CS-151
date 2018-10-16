@@ -12,14 +12,14 @@ public class Graph implements LayoutManager {
 		right = 0;
 		height = 0;
 		for (int i = 0; i < components.length; i += 2) {
-			Component cleft = components[i];
-			Component cright = components[i + 1];
+			Component compLeft = components[i];
+			Component compRight = components[i + 1];
 
-			Dimension dleft = cleft.getPreferredSize();
-			Dimension dright = cright.getPreferredSize();
-			left = Math.max(left, dleft.width);
-			right = Math.max(right, dright.width);
-			height = height + Math.max(dleft.height, dright.height);
+			Dimension dimenLeft = compLeft.getPreferredSize();
+			Dimension dimenRight = compRight.getPreferredSize();
+			left = Math.max(left, dimenLeft.width);
+			right = Math.max(right, dimenRight.width);
+			height = height + Math.max(dimenLeft.height, dimenRight.height);
 		}
 		return new Dimension(left + dist + right, height);
 	}
@@ -38,17 +38,17 @@ public class Graph implements LayoutManager {
 		int y = insets.top;
 
 		for (int i = 0; i < components.length; i += 2) {
-			Component cleft = components[i];
-			Component cright = components[i + 1];
+			Component compLeft = components[i];
+			Component compRight = components[i + 1];
 
-			Dimension dleft = cleft.getPreferredSize();
-			Dimension dright = cright.getPreferredSize();
+			Dimension dimenLeft = compLeft.getPreferredSize();
+			Dimension dimenRight = compRight.getPreferredSize();
 
-			int height = Math.max(dleft.height, dright.height);
+			int height = Math.max(dimenLeft.height, dimenRight.height);
 
-			cleft.setBounds(xcenter - dleft.width, y + (height - dleft.height) / 2, dleft.width, dleft.height);
+			compLeft.setBounds(xcenter - dimenLeft.width, y + (height - dimenLeft.height) / 2, dimenLeft.width, dimenLeft.height);
 
-			cright.setBounds(xcenter + dist, y + (height - dright.height) / 2, dright.width, dright.height);
+			compRight.setBounds(xcenter + dist, y + (height - dimenRight.height) / 2, dimenRight.width, dimenRight.height);
 			y += height;
 		}
 	}
