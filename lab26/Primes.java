@@ -11,3 +11,9 @@ public static Runnable printPrimes(BigInteger start, long length)
          }
       };
 }
+
+Runnable r1 = printPrimes(new BigInteger("1000000000000000"), 10000);
+Runnable r2 = printPrimes(new BigInteger("2000000000000000"), 10000);
+
+ExecutorService service = Executors.newFixedThreadPool(2);
+service.shutdown();
