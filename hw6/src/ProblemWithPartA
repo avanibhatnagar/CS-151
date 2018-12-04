@@ -1,0 +1,16 @@
+part a execution - accountTester leads to account overdrawn
+Problem with part a - "Race condition"
+Multiple threads have access to the same resource.
+Hence they can produce corrupted data if one thread does something too fast before an operation has completed.
+
+
+The solution to this problem:
+SYNCHRONIZATION
+It prevents race conditions from happening.
+It does so by placing a lock on an important object.
+This is done to ensure only one thread will hae access at a particular instant.
+
+        -Variables should be private
+        -the code modifying the variable should be synchronized.
+
+        No more account overdrawn.
